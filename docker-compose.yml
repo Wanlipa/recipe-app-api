@@ -2,9 +2,9 @@ version: "3.9"
 
 services:
   app:
-    build: 
+    build:
       context: .
-      args: 
+      args:
       - DEV=true
     ports:
       - "8000:8000"
@@ -18,7 +18,7 @@ services:
       - DB_HOST=db
       - DB_NAME=devdb
       - DB_USER=devuser
-      - DB_PASS=changeme
+      - DB_PASS=chageme
     depends_on:
       - db
 
@@ -29,7 +29,7 @@ services:
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
-      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_PASSWORD=chageme
 
 volumes:
   dev-db-data:
